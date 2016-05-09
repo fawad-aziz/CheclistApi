@@ -4,6 +4,8 @@
     {
 		public int Id { get; set; }
 
+		public int ChecklistId { get; set; }
+
 		public bool Required { get; set; }
 
 		public bool IsChecked { get; set; }

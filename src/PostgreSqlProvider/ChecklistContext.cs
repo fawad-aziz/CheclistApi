@@ -26,7 +26,7 @@ namespace PostgreSqlProvider
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			var builder = new ConfigurationBuilder().AddJsonFile("../config.json").AddEnvironmentVariables();
+			var builder = new ConfigurationBuilder().AddJsonFile("../../config.json").AddEnvironmentVariables();
 			var configuration = builder.Build();
 
 			var sqlConnectionString = configuration["DataAccessPostgreSqlProvider:ConnectionString"];

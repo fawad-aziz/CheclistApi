@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using ChecklistDomainModel;
 using ChecklistDomainModel.Model;
+using Microsoft.Data.Entity;
 
 namespace PostgreSqlProvider
 {
@@ -15,12 +16,12 @@ namespace PostgreSqlProvider
 
 		public Checklist GetChecklist(int id)
 		{
-			return this._context.Checklists.First(t => t.Id == id);
+			return this._context.Checklists.Include(c => c.Fields).First(t => t.Id == id);
 		}
 
 		public IQueryable<Checklist> GetChecklists()
 		{
-			return this._context.Checklists;
+			return this._context.Checklists.Include(c => c.Fields);
 		}
 	}
 }
