@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{863253B1-986E-45E0-952B-6B3A2C87ADAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD741ED1-CFF7-4AE8-ACC2-D628D920AB08}"
+	ProjectSection(SolutionItems) = preProject
+		config.json = config.json
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ChecklistApi", "src\ChecklistApi\ChecklistApi.xproj", "{4093ED64-5E85-45BC-BB09-1553399C67FC}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ChecklistDomainModel", "src\ChecklistDomainModel\ChecklistDomainModel.xproj", "{B5E1CBCC-4D06-499A-BDC1-005441D31DFB}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PostgreSqlProvider", "src\PostgreSqlProvider\PostgreSqlProvider.xproj", "{C032D28F-72A8-4F44-8098-6027437FEA8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4093ED64-5E85-45BC-BB09-1553399C67FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4093ED64-5E85-45BC-BB09-1553399C67FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4093ED64-5E85-45BC-BB09-1553399C67FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4093ED64-5E85-45BC-BB09-1553399C67FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E1CBCC-4D06-499A-BDC1-005441D31DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E1CBCC-4D06-499A-BDC1-005441D31DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E1CBCC-4D06-499A-BDC1-005441D31DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E1CBCC-4D06-499A-BDC1-005441D31DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C032D28F-72A8-4F44-8098-6027437FEA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C032D28F-72A8-4F44-8098-6027437FEA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C032D28F-72A8-4F44-8098-6027437FEA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C032D28F-72A8-4F44-8098-6027437FEA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4093ED64-5E85-45BC-BB09-1553399C67FC} = {863253B1-986E-45E0-952B-6B3A2C87ADAC}
+		{B5E1CBCC-4D06-499A-BDC1-005441D31DFB} = {863253B1-986E-45E0-952B-6B3A2C87ADAC}
+		{C032D28F-72A8-4F44-8098-6027437FEA8F} = {863253B1-986E-45E0-952B-6B3A2C87ADAC}
+	EndGlobalSection
+EndGlobal
