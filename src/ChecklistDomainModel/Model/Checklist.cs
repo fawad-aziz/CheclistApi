@@ -8,6 +8,8 @@ namespace ChecklistDomainModel.Model
 
 		public int RenderMode { get; set; }
 
+		public string Name { get; set; }
+
 		public List<ChecklistField> Fields { get; set; }
 	}
 }

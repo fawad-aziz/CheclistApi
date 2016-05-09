@@ -9,5 +9,7 @@
 		public bool Required { get; set; }
 
 		public bool IsChecked { get; set; }
+
+		public string Name { get; set; }
     }
 }
