@@ -37,22 +37,13 @@ namespace ChecklistApi
 									                          ReferenceLoopHandling.Ignore
 							                          }
 				                          };
+			services.AddCors();
 			services.AddMvc(
 				options =>
 					{
 						options.OutputFormatters.Clear();
 						options.OutputFormatters.Insert(0, jsonOutputFormatter);
-					});
-			services.AddCors(
-				options =>
-					{
-						options.AddPolicy(
-							"AllowAllOrigins",
-							builder =>
-								{
-									builder.AllowAnyOrigin();
-								});
-					});
+					});			
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,8 +54,8 @@ namespace ChecklistApi
 
 			app.UseIISPlatformHandler();
 			app.UseStaticFiles();
-			app.UseMvc();
-			app.UseCors("AllowSpecificOrigin");
+			app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader());
+			app.UseMvc();			
 		}
 
 		// Entry point for the application.
